@@ -76,15 +76,19 @@ body {
     z-index: 3;
     margin: 0 auto;
     width: 100%;
-    display: block;
-    
+    display: block;    
     position: relative;
 }
+/* switch img */
+.switch-img>img{
+    width: 1500px;
+}
 
-.kirby-img {
+/* kirby images */
+.kirby-img-background {
     z-index: 1;
-    width: 55%;
+    width: 800px;
     position: absolute;
-    top: 33%;
-    right: 22%;
+    top: 320px;
+    left: 400px;
 }
