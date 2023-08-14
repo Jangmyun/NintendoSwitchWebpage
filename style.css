@@ -66,9 +66,9 @@ body {
 }
 
 
-/* main part */
+/* main part
 /* Nintendo Switch part */
-.switch-img {
+/* .switch-img {
     width: 100vw;
 }
 
@@ -78,17 +78,51 @@ body {
     width: 100%;
     display: block;    
     position: relative;
-}
+} */
 /* switch img */
-.switch-img>img{
-    width: 1500px;
-}
+/* .switch-img>img{
+    width: 100vw;
+} */
 
 /* kirby images */
-.kirby-img-background {
+/* .kirby-img-background {
     z-index: 1;
-    width: 800px;
+    width: 60vw;
     position: absolute;
-    top: 320px;
-    left: 400px;
+    top: 20vw;
+    left: 20vw;
+} */
+
+
+
+/* Main Part */
+
+/* Nintendo Switch Part */
+.switch-frame {
+    position: relative;
+    width: 100%;
+}
+.switch-frame img {
+    width: 100%;
+    display: block;
+}
+
+.switch {
+    position: absolute;
+    z-index: 3;
+}
+.switch img{
+    width: 100vw;
+}
+
+/* 닌텐도 스위치 이미지를 가장 상단에 띄우기 위해 다른 이미지박스들의 z-index를 1로 줌 */
+.kb div{            
+    z-index: 1;
+    position: absolute;
+}
+
+.kb-bg {
+    width: 51vw;
+    top: 13vw;
+    left: 24vw;
 }
