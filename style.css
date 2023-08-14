@@ -107,10 +107,6 @@ body {
     display: block;
 }
 
-.switch {
-    position: absolute;
-    z-index: 3;
-}
 .switch img{
     width: 100vw;
 }
@@ -125,4 +121,27 @@ body {
     width: 51vw;
     top: 13vw;
     left: 24vw;
+}
+
+.kb-lor {
+    width: 9vw;
+    top: 14vw;
+    left: 60vw;
+}
+
+.kb-mahoroa {
+    width: 6vw;
+    top: 16vw;
+    left: 56.5vw;
+}
+.kb-mahoroa img {
+    transform: rotate(15deg);
+}
+.kb-metaknite {
+    width: 10vw;
+    top: 17vw;
+    left: 53.5vw;
+}
+.kb-metaknite img{
+    transform: rotate(15deg);
 }
