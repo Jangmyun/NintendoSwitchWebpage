@@ -17,3 +17,46 @@
 
 #### 23.08.12 
 ##### 닌텐도 이미지를 띄우고 그 안에 게임 배경화면을 넣는 건 됐지만 반응형이 잘 안됨 <br>찾아보니 "vw" 단위로 설정하면 되는 것 같음 <br>시간이 없어서 일단 저장후 내일 하기로 함
+
+#### 23.08.14
+##### 검색결과 vw 단위로 스위치 이미지 안에 다른 이미지들이 브라우저 창을 줄여도 상하좌우 위치에 맞게 줄어들게 만드려면<br>이미지박스에 바로 `position: relative`를 주는게 아니라 <br>모든 이미지들이 들어갈 container를 하나 만들고 거기에 `position: relative`를 줘야한다.<br>컨테이너 만드는 습관을 잘 들여야 하는듯..
+
+#### HTML 파일
+```html
+<div class="switch-frame">
+    <div class="switch">
+        <img src="img/nintendo switch.png" alt="">
+    </div>
+    <div class="kb">
+        <div class="kb-bg">
+            <img src="img/kirby/background.jpg" alt="">
+        </div>
+        <div class="kb-lor">
+            <img src="img/kirby/flying_ship.png" alt="">
+        </div>
+        <div class="kb-mahoroa">
+            <img src="img/kirby/chara_mahoroa.png" alt="">
+        </div>
+    </div>
+</div>
+```
+#### CSS 파일
+```css
+.switch-frame {
+    position: relative;
+    width: 100%;
+}
+.switch-frame {     
+    position: relative; /* 스위치 이미지가 가장 상단에 위치*/
+    width: 100%;
+}
+.switch img{    /* 스위치 이미지 100vw로 */
+    width: 100vw;
+}
+/* 닌텐도 스위치 이미지를 가장 상단에 띄우기 위해 다른 이미지박스들의 z-index를 1로 줌 */
+.kb div{            
+    z-index: 1;
+    position: absolute;
+}
+
+```
