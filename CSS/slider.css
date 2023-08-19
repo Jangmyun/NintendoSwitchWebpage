@@ -13,6 +13,11 @@
     animation: autoplay 40s linear infinite;
 }
 
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+
 .slide {
     width: 350px;
     display: flex;
