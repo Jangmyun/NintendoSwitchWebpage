@@ -2,15 +2,19 @@
 .switch-frame {
     position: relative;
     width: 100%;
+    
 }
 .switch-frame img {
     width: 100%;
     display: block;
+    
 }
 
 .switch img{
     width: 100vw;
     z-index: 2;
+    background: rgb(131,0,7);
+    background: linear-gradient(0deg, rgba(131,0,7,1) 0%, rgba(227,7,18,1) 100%);
 }
 
 /* 닌텐도 스위치 이미지를 가장 상단에 띄우기 위해 다른 이미지박스들의 z-index를 1로 줌 */
